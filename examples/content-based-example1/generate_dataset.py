@@ -10,7 +10,7 @@ def generate_dataset(rows=5, columns=3, rating_range=(1, 5)):
 if __name__ == "__main__":
     X, y = generate_dataset()
 
-    np.savetxt("features.txt", X, fmt="%.2f", header="Feature Matrix", comments="")
-    np.savetxt("ratings.txt", y, fmt="%d", header="Ratings Vector", comments="")
+    np.savetxt("examples/content-based-example1/features.txt", X, fmt="%.2f", header="Feature Matrix", comments="")
+    np.savetxt("examples/content-based-example1/ratings.txt", y, fmt="%d", header="Ratings Vector", comments="")
 
     print("Success !")
